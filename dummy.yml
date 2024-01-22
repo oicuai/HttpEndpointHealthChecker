@@ -1,0 +1,23 @@
+- headers:
+    user-agent: fetch-synthetic-monitor
+  method: GET
+  name: fetch index page
+  url: https://example.com/
+- headers:
+    user-agent: fetch-synthetic-monitor
+  method: GET
+  name: fetch careers page
+  url: http://www.google.com/generate_204
+- body: '{"foo":"bar"}'
+  headers:
+    content-type: application/json
+    user-agent: fetch-synthetic-monitor
+  method: POST
+  name: fetch some fake post endpoint
+  url: https://google.com/
+- name: fetch rewards index page
+  url: https://www.google.com/404
+- name: fetch rewards index page
+  url: https://shop.flixbus.com/
+- name: fetch rewards index page
+  url: https://www.flixbus.com/
